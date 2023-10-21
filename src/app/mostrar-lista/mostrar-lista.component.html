@@ -1,0 +1,8 @@
+<mat-card class="container">
+    <mat-card-header>
+        <mat-card-title>Lista de {{listaNumeros.length}} numeros</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <h1 *ngFor="let num of listaNumeros">{{num}}</h1>
+    </mat-card-content>
+</mat-card>

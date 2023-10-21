@@ -1,0 +1,14 @@
+<mat-card class="container">
+    <mat-card-header>
+        <mat-card-title>Agregar a la lista</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form (ngSubmit)="aumentarLista()">
+            <mat-form-field appearance="outline" class="w100">
+                <mat-label>Agregar número a la lista</mat-label>
+                <input type="number" matInput placeholder="Digite el número a agregar" name="numeroAñadir" [(ngModel)]="numero">
+            </mat-form-field>
+            <button mat-raised-button color="primary">Agregar</button>
+        </form>
+    </mat-card-content>
+</mat-card>

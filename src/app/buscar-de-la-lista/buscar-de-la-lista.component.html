@@ -1,0 +1,18 @@
+<mat-card class="container">
+    <mat-card-header>
+        <mat-card-title>Buscar en la lista</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form (ngSubmit)="obtenerPosicion()">
+            <mat-form-field appearance="outline" class="w100">
+                <mat-label>Buscar número</mat-label>
+                <input type="number" matInput placeholder="Digite el número a buscar" name="numeroBuscar"
+                    [(ngModel)]="numero">
+            </mat-form-field>
+            <button mat-raised-button color="primary">Buscar</button>
+        </form>
+        <h1 *ngIf="posicion != null && posicion != -1">El numero {{n}} se encontró en la posición {{posicion}}</h1>
+        <h1 *ngIf="posicion != null && posicion == -1">El numero {{n}} no se encontró en la lista</h1>
+    </mat-card-content>
+        
+</mat-card>
